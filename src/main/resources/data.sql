@@ -1,0 +1,12 @@
+INSERT INTO breed (name) VALUES ('Bulldog');
+INSERT INTO breed (name) VALUES ('Labrador Retriever');
+INSERT INTO breed (name) VALUES ('German Shepard');
+INSERT INTO breed (name) VALUES ('French Bulldog');
+INSERT INTO breed (name) VALUES ('Australian Cattle Dog');
+INSERT INTO breed (name) VALUES ('Boxer');
+INSERT INTO breed (name) VALUES ('Chihuahua');
+INSERT INTO breed (name) VALUES ('Shiba Inu');
+INSERT INTO breed (name) VALUES ('Akita');
+INSERT INTO breed (name) VALUES ('American Eskimo');
+INSERT INTO breed (name) VALUES ('Finnish Spitz');
+INSERT INTO breed (name) VALUES ('Pomeranian');

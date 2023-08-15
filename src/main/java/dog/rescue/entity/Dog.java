@@ -45,6 +45,7 @@ public class Dog { // child of location in DB
 
 	// owning side, many to many
 	@EqualsAndHashCode.Exclude
+	@ToString.Exclude
 	@ManyToMany(cascade = CascadeType.PERSIST) // persist type - do not delete rows out of breed tbl if del dog, but do del out of join tbl rows
 	@JoinTable(
 			name = "dog_breed",

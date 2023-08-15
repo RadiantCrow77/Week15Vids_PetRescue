@@ -10,6 +10,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 @Entity
 @Data // lombok annotation gens getters/setters, toString, etc
@@ -27,7 +29,9 @@ public class Location {
 
 // one to many relatnship with dogs held by a Set
 //...  define owning side of 1-many relnship as well as cascade type in ()
-	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true) // if saving a location, saves dogs, same happens for
+	@EqualsAndHashCode.Exclude
+	@ToString.Exclude
+	@OneToMany(mappedBy = "location", cascade = CascadeType.ALL, orphanRemoval = true) // if saving a location, saves dogs, same happens for
 																// deleting
 	private Set<Dog> dogs = new HashSet<>();
 }

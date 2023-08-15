@@ -1,8 +1,8 @@
 --drop tables and recreate them before every test, in reverse order of creation
-DROP TABLE IF EXISTS dog_breed
-DROP TABLE IF EXISTS breed
-DROP TABLE IF EXISTS dog
-DROP TABLE IF EXISTS location
+DROP TABLE IF EXISTS dog_breed;
+DROP TABLE IF EXISTS breed;
+DROP TABLE IF EXISTS dog;
+DROP TABLE IF EXISTS location;
 
 CREATE TABLE location (
 location_id int NOT NULL AUTO_INCREMENT,
@@ -11,7 +11,7 @@ street_address varchar(128) NOT NULL,
 city varchar(60),
 state varchar(40),
 zip varchar(20),
-phone varchar(30)
+phone varchar(30),
 PRIMARY KEY (location_id)
 );
 

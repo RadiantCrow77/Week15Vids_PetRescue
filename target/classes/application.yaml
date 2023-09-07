@@ -6,11 +6,11 @@ spring:
      
   jpa:
    hibernate:
-      ddl-auto: update
+      ddl-auto: none # ....
    show-sql: true
    defer-datasource-initialization: true
    
   sql:
      init:
-        mode: always
+        mode: never # when app starts up, SQL is not going to drop + create tables ... we're doing it in a different way in integration test
          
